@@ -24,9 +24,9 @@
     
     <p><select size="3" multiple name="category">
     <option disabled>Категория</option>
-    <option value="1">Платья</option>
-    <option value="2">Рубашки</option>
-    <option value="3">Куртки</option>
+    <option value="1">Джинсы</option>
+    <option value="2">Сумки</option>
+    <option value="3">Обувь</option>
     </select></p>
     </br>
     <button class="btn btn-default" type="submit">Загрузка</button>

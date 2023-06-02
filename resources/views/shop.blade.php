@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-sm-6 col-md-6 col-lg-4 ftco-animate">
                             <div class="product">
-                                <a href="#" class="img-prod"><img class="img-fluid"
+                                <a href="/digital/public/product" class="img-prod"><img class="img-fluid"
                                         src="{{ asset('assets/images/product-1.jpg') }}" alt="Colorlib Template">
                                     <span class="status">30%</span>
                                     <div class="overlay"></div>

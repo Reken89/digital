@@ -18,6 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/shop', function () {
+    return view('shop');
+});
+
+Route::get('/product', function () {
+    return view('product-single');
+});
+
 // Роут для перенаправления в панель администратора
 // Роут защищен посредником, который проверяет является ли пользователь администратором
 Route::get('/admin/panelshop', [ShopController::class, 'panel'])->middleware('auth', 'admin')->name('adminshop');
