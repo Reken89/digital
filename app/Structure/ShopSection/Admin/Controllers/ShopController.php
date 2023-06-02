@@ -3,6 +3,8 @@
 namespace App\Structure\ShopSection\Admin\Controllers;
 
 use App\Structure\ShopSection\Admin\Requests\ClothesUploadRequest;
+use App\Structure\ShopSection\Admin\Dto\ClothesUploadDto;
+use App\Structure\ShopSection\Admin\Actions\ClothesAddAction;
 use App\Core\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -26,9 +28,14 @@ class ShopController extends Controller
      * @return 
      */
     public function upload(ClothesUploadRequest $request)
-    {       
-        //$path = $request->file('image')->store('uploads', 'public');
-        //$path = '/storage/' . $path;
+    {   
+        //Выпоняем типизацию данных
+        //Передаем типизацию в action для дальнейшей обработки
+        $dto = ClothesUploadDto::fromRequest($request);
+        $status = $this->action(ClothesAddAction::class)->run($dto);
+        
+        //Возвращаем результат, true или false
+        return $status;       
 
     }
     

@@ -4,7 +4,7 @@ namespace App\Structure\ShopSection\Admin\Dto;
 
 use App\Structure\ShopSection\Admin\Requests\ClothesUploadRequest;
 use Illuminate\Http\UploadedFile;
-use App\Core\Parents\BaseDto;
+use App\Core\Dto\BaseDto;
 
 class ClothesUploadDto extends BaseDto
 {
