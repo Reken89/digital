@@ -22,5 +22,7 @@ Route::get('/', function () {
 // Роут защищен посредником, который проверяет является ли пользователь администратором
 Route::get('/admin/panelshop', [ShopController::class, 'panel'])->middleware('auth', 'admin')->name('adminshop');
 
+Route::post('/admin/upload', [ShopController::class, 'upload'])->middleware('auth', 'admin');
+
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
