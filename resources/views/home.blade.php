@@ -1,5 +1,12 @@
 @extends('layouts.app')
 
+@if ($role == "admin")
+    </br>
+        <form action="{{ route('adminshop')}}" method="get">
+            <button type="submit" class="custom-btn btn-16"><b>Панель админа<b></button>
+        </form>
+@endif
+
 @section('content')
     <section id="home-section" class="hero">
         <div class="home-slider js-fullheight owl-carousel">

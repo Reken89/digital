@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Structure\ShopSection\Admin\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+// Роут для перенаправления в панель администратора
+// Роут защищен посредником, который проверяет является ли пользователь администратором
+Route::get('/admin/panelshop', [ShopController::class, 'panel'])->middleware('auth', 'admin')->name('adminshop');
 
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
