@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@php
+    $user_id = session('user_id');
+@endphp
+
 @section('content')
     <div class="hero-wrap hero-bread" style="background-image: url('{{ asset('assets/images/bg_6.jpg') }}');">
         <div class="container">
@@ -42,10 +46,10 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
-                                                    class="ion-ios-add ml-1"></i></span></a>
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 1])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                                class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
-                                                    class="ion-ios-cart ml-1"></i></span></a>
+                                                class="ion-ios-cart ml-1"></i></span></a>
                                     </p>
                                 </div>
                             </div>
@@ -73,7 +77,7 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 2])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>
@@ -104,7 +108,7 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 3])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>
@@ -135,7 +139,7 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 4])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>
@@ -166,7 +170,7 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 5])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>
@@ -197,7 +201,7 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 6])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>
@@ -228,7 +232,7 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 7])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>
@@ -259,7 +263,7 @@
                                         </div>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
+                                        <a href="{{ route('purchase', ['id' => $user_id , 'clothes_id' => 8])}}" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i
                                                     class="ion-ios-add ml-1"></i></span></a>
                                         <a href="#" class="buy-now text-center py-2">Buy now<span><i
                                                     class="ion-ios-cart ml-1"></i></span></a>

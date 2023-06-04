@@ -25,6 +25,10 @@ class HomeController extends Controller
     public function index()
     {
         $role = Auth::user()->role();
+        $id = Auth::user()->id();
+        //Записываем id пользователя в сессию, для дальнейшего использования в проекте
+        session(['user_id' => $id]);
+        
         return view('home', ['role' => $role]);
     }
 }

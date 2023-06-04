@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Structure\BasketSection\User\Models\Basket;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -50,4 +52,17 @@ class User extends Authenticatable
     {
         return $this->role;
     }
+    
+    /**
+     * Определяем id пользователя
+     */
+    public function id()
+    {
+        return $this->id;
+    }
+    
+    public function basket(): HasMany
+    {
+        return $this->hasMany(Basket::class);
+    }  
 }

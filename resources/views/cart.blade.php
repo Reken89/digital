@@ -30,7 +30,7 @@
                             </thead>
                             <tbody>
                                 <tr class="text-center">
-                                    <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a>
+                                    <td class="product-remove"><a href="{{ route('basketdelete', ['id' => 1])}}"><span class="ion-ios-close"></span></a>
                                     </td>
 
                                     <td class="image-prod">
@@ -55,7 +55,7 @@
                                 </tr><!-- END TR-->
 
                                 <tr class="text-center">
-                                    <td class="product-remove"><a href="#"><span class="ion-ios-close"></span></a>
+                                    <td class="product-remove"><a href="{{ route('basketdelete', ['id' => 2])}}"><span class="ion-ios-close"></span></a>
                                     </td>
 
                                     <td class="image-prod">

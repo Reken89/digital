@@ -37,7 +37,7 @@ class ShopController extends Controller
         //Возвращаем результат, true или false
         return $status;       
 
-    }
+    }   
     
 }
 
