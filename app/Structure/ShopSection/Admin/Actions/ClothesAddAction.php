@@ -18,7 +18,6 @@ class ClothesAddAction extends BaseAction
     {   
         //Загружаем изображение вещи в каталог public
         //Подготавливаем ссылку на изображение для записи в таблицу clothes
-        //$path = $request->file('image')->store('uploads', 'public');
         $path = $dto->image->store('uploads', 'public');
         $link = '/storage/' . $path;
         

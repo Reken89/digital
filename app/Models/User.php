@@ -61,6 +61,7 @@ class User extends Authenticatable
         return $this->id;
     }
     
+    // Определение связи один ко многим (к таблице basket)
     public function basket(): HasMany
     {
         return $this->hasMany(Basket::class);

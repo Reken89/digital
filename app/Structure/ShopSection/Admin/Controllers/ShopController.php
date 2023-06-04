@@ -6,7 +6,6 @@ use App\Structure\ShopSection\Admin\Requests\ClothesUploadRequest;
 use App\Structure\ShopSection\Admin\Dto\ClothesUploadDto;
 use App\Structure\ShopSection\Admin\Actions\ClothesAddAction;
 use App\Core\Controllers\Controller;
-use Illuminate\Http\Request;
 
 class ShopController extends Controller
 {

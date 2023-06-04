@@ -16,11 +16,13 @@ class Basket extends Model
     
     public $timestamps = false;
     
+    //Определение обратной связи один ко многим (к таблице clothes)
     public function clothes()
     {
         return $this->belongsTo(Clothes::class, 'clothes_id');
     }
     
+    //Определение обратной связи один ко многим (к таблице users)
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id');

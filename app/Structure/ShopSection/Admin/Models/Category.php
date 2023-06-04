@@ -16,6 +16,7 @@ class Category extends Model
     
     public $timestamps = false;
     
+    // Определение связи один ко многим (к таблице Clothes)
     public function clothes(): HasMany
     {
         return $this->hasMany(Clothes::class);

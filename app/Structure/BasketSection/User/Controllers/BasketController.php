@@ -9,7 +9,6 @@ use App\Structure\BasketSection\User\Dto\BasketAddDto;
 use App\Structure\BasketSection\User\Dto\BasketDeleteDto;
 use App\Structure\BasketSection\User\Actions\BasketAddAction;
 use App\Structure\BasketSection\User\Actions\BasketDeleteAction;
-use Illuminate\Http\Request;
 
 class BasketController extends Controller
 {       
